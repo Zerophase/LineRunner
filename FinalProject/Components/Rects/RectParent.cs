@@ -21,8 +21,6 @@ namespace FinalProject.Components
         protected int width;
         protected int Width { get { return width; } set { width = value; } }
 
-        
-
         protected name rectName;
         public name RectName { get { return rectName; } }
 

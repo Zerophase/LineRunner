@@ -17,29 +17,7 @@ namespace FinalProject
 
         public Color[] SpriteTextureData;
 
-        //private Color[] blankTextureColor;
-        //protected string blankTextureName;
-
         protected Texture2D spriteTexture;
-
-        //protected Texture2D blankTexture
-        //{
-        //    get { return spriteTexture; }
-        //    set
-        //    {
-        //        //ask about this.
-        //        if (blankTextureName == "BlankTexture")
-        //        {
-        //            spriteTexture = new Texture2D(GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
-        //            blankTextureColor = new Color[1];
-        //            for (int i = 0; i < blankTextureColor.Length; i++)
-        //            {
-        //                blankTextureColor[i] = Color.White;
-        //            }
-        //            spriteTexture.SetData(blankTextureColor);
-        //        }
-        //    }
-        //}
 
         //Rework so public isn't needed for setting SpriteTextureData.
         public Texture2D SpriteTexture
@@ -64,7 +42,6 @@ namespace FinalProject
         protected ContentManager content;
         protected GraphicsDeviceManager graphics;
         
-        //REFACTOR FOR CAPS
         public Vector2 Location;
         public Vector2 Direction;
         public Vector2 Origin;
@@ -98,7 +75,7 @@ namespace FinalProject
         public SpriteComponent(Game game) 
             : base(game)
         {
-            content = this.Game.Content;//game.Content;
+            content = this.Game.Content;
         }
 
         public override void Initialize()

@@ -37,8 +37,10 @@
   <ItemGroup>
     <Compile Include="BackgroundManager.cs" />
     <Compile Include="Components\BackgroundSprite.cs" />
+    <Compile Include="Components\Chunks\Chunk.cs" />
     <Compile Include="Components\Chunks\ChunkConstructor.cs" />
     <Compile Include="Components\Chunks\IChunk.cs" />
+    <Compile Include="Components\Chunks\WallAndPitChunk.cs" />
     <Compile Include="Components\Chunks\WallChunk.cs" />
     <Compile Include="Components\CollisionManager.cs" />
     <Compile Include="Components\Chunks\FlatChunk.cs" />

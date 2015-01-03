@@ -4,6 +4,6 @@ namespace FinalProject.Components
 {
     public interface IChunk
     {
-        IEnumerable<RectParent> CreateChunk(uint chunkSize);
+        void CreateChunk(uint chunkSize);
     }
 }

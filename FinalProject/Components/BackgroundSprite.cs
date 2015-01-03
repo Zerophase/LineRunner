@@ -36,8 +36,6 @@ namespace FinalProject.Components
 
         protected override void LoadContent()
         {
-
-
             base.LoadContent();
         }
     }

@@ -98,6 +98,7 @@ namespace FinalProject.GameStates
 
                 playerSprite.Reset();
                 chunkConstructor.Reset();
+                score.Reset();
 
                 this.Enabled = false;
                 this.Visible = false;

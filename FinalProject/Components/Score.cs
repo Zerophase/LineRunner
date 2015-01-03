@@ -17,15 +17,15 @@ namespace FinalProject.Components
 
         private string scoreDisplayed = "0";
         private string scoreTitle = "Score";
+        private int scorePerSecond = 100;
+        private int currentScore;
 
-        private float time = 0;
-        ChunkConstructor chunkConstructor;
+        private float time;
 
         public Score(Game game)
             : base(game)
         {
             font = game.Content.Load<SpriteFont>("MyFont");
-            chunkConstructor = (ChunkConstructor)game.Services.GetService(typeof(IChunkConstructor));
         }
 
         public override void Update(GameTime gameTime)
@@ -34,12 +34,16 @@ namespace FinalProject.Components
 
             if (time > 1000)
             {
-                scoreDisplayed = ((int)(chunkConstructor.Location.X * -1)).ToString();
+                scoreDisplayed = (currentScore += scorePerSecond).ToString();
                 time = 0;
             }
             
-
             base.Update(gameTime);
+        }
+
+        public void Reset()
+        {
+            currentScore = 0;
         }
 
         public override void Draw(GameTime gameTime)
